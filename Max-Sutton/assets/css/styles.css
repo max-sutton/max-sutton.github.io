@@ -1,0 +1,148 @@
+h1 {
+    font-family: Garamond;
+    font-size: 2.5em;
+    color: black;
+  }
+  
+  h3 {
+    font-family: monospace;
+    font-size: 1.5em;
+    color: black;
+  }
+
+  .resume-contact {
+    font-size: 12px; /* Equivalent to 11pt in Word */
+    line-height: 1.15; /* Matches Word's default single spacing */
+    margin-bottom: 10px; /* Space between paragraphs */
+    text-align: center; /* Centers the text */
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  h1.resume-title {
+    font-size: 16px; /* Adjust to desired size */
+    font-weight: bold;
+    text-align: center; /* Ensures the title stays centered */
+    margin: 0; /* Eliminates unwanted margin */
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.15; /* Matches Word's default single spacing */
+  }
+
+  .resume-container ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    font-size: 12px; /* Equivalent to 11pt in Word */
+    line-height: 1.15; /* Matches Word's default single spacing */
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Adds space between bullets and text */
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .resume-container p {
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    font-size: 12px; /* Equivalent to 11pt in Word */
+    line-height: 1.15; /* Matches Word's default single spacing */
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+
+  .job-entry {
+    display: flex;
+    justify-content: space-between; /* Pushes left and right content apart */
+    align-items: center; /* Aligns both on the same line */
+    font-size: 12px; /* 11pt in Word */
+    line-height: 1.15;
+    margin-bottom: 2px; /* Spacing between job entries */
+  }
+
+  .job-title{
+    font-weight: bold; /* Emphasize job title */
+    font-size: 12px; /* Equivalent to 11pt in Word */
+    line-height: 1.15;  /* Matches Word's default single spacing */
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .job-title-italicized
+  {
+    font-weight: bold; /* Emphasize job title */
+    font-size: 12px; /* Equivalent to 11pt in Word */
+    line-height: 1.15;  /* Matches Word's default single spacing */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+  
+  .left-title {
+    font-weight: bold; /* Emphasize job title */
+  }
+  
+  .right-dates {
+    text-align: right; /* Ensures dates stay on the right */
+    white-space: nowrap; /* Prevents line wrapping */
+    font-weight: bold; /* Emphasize job title */
+    font-size: 12px; /* Equivalent to 11pt in Word */
+    line-height: 1.15;  /* Matches Word's default single spacing */
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .resume-container h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .resume-container h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .resume-container {
+    width: 100%;
+    max-width: 612px; 
+    max-height: 792px; /* Approx height of a letter-sized document */
+    margin: 50px auto; /* Centers the container horizontally and adds vertical spacing */
+    padding: 5%; /* Adds space inside the container */
+    background-color: #fff; /* Optional: gives the container a white background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a soft shadow around the container */
+    overflow: hidden; /* Prevents content from spilling out */
+  }
+
+  
+  @media (max-width: 1024px) {
+    /* For tablets or medium-sized devices */
+    .resume-container {
+      max-width: 90%; /* Adjust the width to 90% of the viewport */
+      max-height: 80vh; /* Adjust the height to be 80% of the viewport height */
+      padding: 15px; /* Adjust the padding for better fit */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* For smaller tablets or large phones */
+    .resume-container {
+      max-width: 90%; /* Still 90% of the viewport width */
+      max-height: 75vh; /* Height is reduced to 75% of the viewport height */
+      padding: 8%; /* Adjust the padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* For mobile devices (e.g., iPhone) */
+    .resume-container {
+      max-width: 95%; /* Adjust the width to 95% of the viewport width */
+      max-height: 70vh; /* Reduce height to 70% of the viewport height */
+      padding: 6%; /* Slightly smaller padding */
+    }
+  }

@@ -1,0 +1,8 @@
+# Site settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+navigation:
+- title: Resume
+  url: /resume/
